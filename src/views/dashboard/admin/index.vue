@@ -26,6 +26,10 @@
       </el-col>
     </el-row>
 
+    <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
+      <graph />
+    </el-row>
+
     <el-row :gutter="8">
       <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
         <transaction-table />
@@ -50,6 +54,7 @@ import BarChart from './components/BarChart'
 import TransactionTable from './components/TransactionTable'
 import TodoList from './components/TodoList'
 import BoxCard from './components/BoxCard'
+import Graph from '@/components/Graph'
 
 const lineChartData = {
   newVisitis: {
@@ -81,7 +86,8 @@ export default {
     BarChart,
     TransactionTable,
     TodoList,
-    BoxCard
+    BoxCard,
+    Graph
   },
   data() {
     return {
